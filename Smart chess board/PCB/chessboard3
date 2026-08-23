@@ -1,0 +1,45 @@
+import pcbnew
+
+board = pcbnew.GetBoard()
+
+# --- PODEŠAVANJA ---
+pitch = 25.0       # Razmak između polja u mm
+start_x = 50.0     # Početna X koordinata za prvo polje (A1) u mm
+start_y = 50.0     # Početna Y koordinata za prvo polje (A1) u mm
+
+# Pomaci komponenata u odnosu na centar polja (u mm)
+led_offset = (0.0, 0.0)        # Dioda u samom centru
+sensor_offset = (0.0, -4.5)    # Senzor 4.5mm iznad centra
+resistor_offset = (0.0, 4.5)   # Otpornik 4.5mm ispod centra
+cap_offset = (5.0, 0.0)        # Kondenzator 5mm desno od centra
+
+# --- SLAGANJE MREŽE (8x8) ---
+for row in range(8):
+    for col in range(8):
+        # Indeks komponente od 1 do 64
+        idx = row * 8 + col + 1
+
+        # Centar trenutnog šahovskog polja
+        cx = start_x + col * pitch
+        cy = start_y + row * pitch
+
+        # Oznake komponenti (D1..D64, U1..U64, R1..R64, C1..C64)
+        refs = {
+            f"D{idx}": led_offset,
+            f"U{idx}": sensor_offset,
+            f"R{idx}": resistor_offset,
+            f"C{idx}": cap_offset
+        }
+
+        # Postavljanje na poziciju
+        for ref, offset in refs.items():
+            fp = board.FindFootprintByReference(ref)
+            if fp:
+                target_x = pcbnew.FromMM(cx + offset[0])
+                target_y = pcbnew.FromMM(cy + offset[1])
+                fp.SetPosition(pcbnew.VECTOR2I(int(target_x), int(target_y)))
+
+# Osvježi prikaz u PCB Editoru
+pcbnew.Refresh()
+print("Sve komponente su uspješno poslagane!")
+
