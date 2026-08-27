@@ -4,6 +4,12 @@ A physical chess board that can detect the position of chess pieces in real time
 
 The project combines custom electronics, firmware and a 3D printed enclosure to create a chess board that can understand what is happening on the board without using mechanical switches.
 
+## Budget & SMT Notes
+
+- **Shipping:** Selected the cheapest available shipping method to Bosnia and Herzegovina ($71.75).
+- **SMT Assembly:** I attempted to use Economic SMT Assembly to minimize costs, but JLCPCB automatically forces a switch to **Standard SMT Assembly** when incorporating WS2812B addressable LEDs.
+- **Self-Funded Components:** To keep the requested grant minimal, I will personally cover all additional hardware costs (ESP32 controller board, magnets, and 3D printing materials for the enclosure).
+
 ## Current Status
 
 The PCB design is complete and the first board is being prepared for production and assembly.
