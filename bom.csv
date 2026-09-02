@@ -1,8 +1,12 @@
-Item,Description,Quantity,Unit Price (USD),Total Price (USD)
-JLCPCB Merchandise,PCB Manufacturing & SMT Assembly (Standard),1,100.23,100.23
-JLCPCB Shipping,Cheapest available shipping option to Bosnia and Herzegovina,1,71.75,71.75
-Discounts & Fees,Applied coupons (-$18.08) and processing fee ($0.77),1,-17.31,-17.31
-ESP32 Development Board,Covered personally by creator,1,0.00,0.00
-Chess Piece Magnets,Covered personally by creator,1,0.00,0.00
-3D Printing Filament & Case,Covered personally by creator,1,0.00,0.00
-Grand Total,,,154.67,154.67
+Item,Description,Quantity,Unit Price (USD),Total Price (USD),Link
+Bare PCBs & LCSC Parts,5pcs Custom PCBs + All SMD Components (LEDs, Shift Registers, Sensors, Resistors, Caps),1,26.57,26.57,https://jlcpcb.com
+JLCPCB / LCSC Shipping,Combined shipping for PCBs and LCSC components to BiH,1,43.38,43.38,https://jlcpcb.com
+ESP32 DevKit,ESP32-WROOM-32D 30-Pin Board,1,3.50,3.50,https://www.aliexpress.com/item/1005005704190069.html
+AliExpress Shipping,Shipping for ESP32 board to BiH (11.97 BAM),1,6.70,6.70,https://www.aliexpress.com/item/1005005704190069.html
+WS2812B LEDs,LCSC C114586 RGB LEDs (64pcs),64,0.0834,5.34,https://www.lcsc.com/product-detail/C114586.html
+74HC165 ICs,LCSC C5613 SOIC-16 Shift Registers (8pcs),8,0.1171,0.94,https://www.lcsc.com/product-detail/C5613.html
+A3144 Hall Sensors,LCSC C18221462 SOT-23 (64pcs),64,0.1159,7.42,https://www.lcsc.com/product-detail/C18221462.html
+0805 Capacitors 100nF,LCSC C1591 SMD Capacitors (64pcs),64,0.0108,0.69,https://www.lcsc.com/product-detail/C1591.html
+0805 Resistors,LCSC C98220 / C25804 SMD Resistors,65,0.0036,0.24,https://www.lcsc.com/product-detail/C98220.html
+SMD Hot Plate Tool,Covered personally by creator for DIY soldering assembly,1,0.00,0.00,https://www.aliexpress.com/item/1005010119785278.html
+Grand Total,,,,80.15,
