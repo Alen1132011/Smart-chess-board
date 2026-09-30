@@ -108,6 +108,10 @@ The first assembled board will be an important milestone because it will show wh
 
 <img width="1371" height="1219" alt="Screenshot 2026-08-27 151956" src="https://github.com/user-attachments/assets/ba90efd6-0b96-4e1e-87e5-2dac465f5c3e" /><img width="2364" height="1290" alt="chess board_fixed" src="https://github.com/user-attachments/assets/d0390124-cccb-4b02-b1c9-ab2da42277ba" />
 <img width="1634" height="1146" alt="Screenshot 2026-08-27 151923" src="https://github.com/user-attachments/assets/6b83e262-807a-48d6-bc60-0304afed097f" />
+<img width="898" height="537" alt="image" src="https://github.com/user-attachments/assets/2e85bae4-3372-404b-8b4c-d2b678762878" />
+<img width="1918" height="1016" alt="image" src="https://github.com/user-attachments/assets/90421450-3afd-40be-a529-be67990a9f21" />
+
+
 
 
  
